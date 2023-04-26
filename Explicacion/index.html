@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones en JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Funciones en JavaScript</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Funciones Declaradas</h2>
+            <p>Las funciones declaradas son aquellas que se definen utilizando la palabra clave "function".</p>
+            <p>Su estructura básica es la siguiente:</p>
+            <pre><code>
+                function nombreFuncion(parametros) {
+                    // Código a ejecutar
+                    return resultado;
+                }
+            </code></pre>
+            <p>Algunas ventajas de las funciones declaradas son:</p>
+            <ul>
+                <li>Son hoisted, lo que significa que se pueden llamar antes de ser definidas en el código.</li>
+                <li>Se pueden llamar desde cualquier lugar del código.</li>
+            </ul>
+            <p>Un ejemplo de función declarada sería:</p>
+            <pre><code>
+                function suma(a, b) {
+                    return a + b;
+                }
+                console.log(suma(2, 3)); // Output: 5
+            </code></pre>
+        </section>
+        <section>
+            <h2>Funciones Expresadas</h2>
+            <p>Las funciones expresadas son aquellas que se definen como una expresión, es decir, asignando la función a
+                una variable.</p>
+            <p>Su estructura básica es la siguiente:</p>
+            <pre><code>
+                let nombreFuncion = function(parametros) {
+                    // Código a ejecutar
+                    return resultado;
+                }
+            </code></pre>
+            <p>Algunas ventajas de las funciones expresadas son:</p>
+            <ul>
+                <li>No son hoisted, lo que significa que deben ser definidas antes de ser llamadas.</li>
+                <li>Permiten crear funciones anónimas.</li>
+            </ul>
+            <p>Un ejemplo de función expresada sería:</p>
+            <pre><code>
+                let resta = function(a, b) {
+                    return a - b;
+                };
+                console.log(resta(5, 2)); // Output: 3
+            </code></pre>
+        </section>
+        <section>
+            <h2>Funciones de Flecha</h2>
+            <p>Las funciones de flecha son una forma simplificada de escribir funciones expresadas.</p>
+            <p>Su estructura básica es la siguiente:</p>
+            <pre><code>
+                let nombreFuncion = (parametros) => {
+                    // Código a ejecutar
+                    return resultado;
+                }
+            </code></pre>
+            <p>Algunas ventajas de las funciones de flecha son:</p>
+            <ul>
+                <li>Son más cortas y fáciles de leer.</li>
+                <li>No cambian el valor de "this" dentro de la función.</li>
+            </ul>
+            <p>Un ejemplo de función flecha sería:</p>
+            <pre><code>
+                let multiplicacion = (a, b) => {
+                    return a * b;
+                };
+                console.log(multiplicacion(2, 4)); // Output: 8
+            </code></pre>
+        </section>
+    </main>
+    <!-- Descomentarea el script para probar el codigo -->
+    <script src="1-funcionesDeclaradas.js"></script>
+    <!-- <script src="2-funcionesExpresadas.js"></script> -->
+    <!-- <script src="3-funcionesFlecha.js"></script> -->
+    <!-- <script src="../Calcular-propina/propina.js"></script> -->
+</body>
+
+</html>

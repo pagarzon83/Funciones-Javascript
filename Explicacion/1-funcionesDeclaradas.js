@@ -4,7 +4,7 @@ Son funciones que forman parte del ámbito global del programa, que para que se 
 
 //Funcion declarada sin parametros y sin valor de retorno
 
-console.log("-----------------------------------------------------")
+console.log("--------------------FUNCIONES DECLARADAS---------------------------------")
 
 function estoEsUnaFuncion(){
     console.log("Uno")
